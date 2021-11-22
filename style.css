@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+:root {
+    /* colors */
+    --clr-strong-cyan: hsl(172, 67%, 45%);
+    --clr-very-dark-cyan:  hsl(183, 100%, 15%);
+    --clr-dark-grayish-cyan: hsl(184, 14%, 56%);
+    --clr-light-grayish-cyan: hsl(185, 41%, 84%);
+    --clr-lighter-grayish-cyan: hsl(189, 41%, 97%);
+    --clr-white: hsl(0, 0%, 100%);
+    
+    /* font */
+    --fs-100: 2rem;
+    /*24px*/
+
+    /* font weight */
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+}
+
+
+/* style reset */
+
+*,
+ ::before,
+ ::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+    font-family: var(--ff-sans-normal);
+    background-color: var(--clr-light-grayish-cyan);
+    color: var(--clr-white);
+    font-family: 'Space Mono', monospace;
+}
+
+img,
+picture,
+figure {
+    max-width: 100%;
+    display: block;
+}
+
+/* global class */
+.flex {
+    display: flex;   
+}
+
+.f-j-c {
+    justify-content: center;
+}
+
+.f-a-c {
+    align-items: center;
+}
+
+.f-s-a {
+    justify-content: space-around;
+}
+
+.container {
+    min-height: 100vh;    
+}
+
+.child {
+    width: 700px;
+    height: 400px;
+    border-radius: 15px;
+    background-color: var(--clr-white);
+}
+
+.left{
+    background-color: var(--clr-white);
+    width: 45%;
+    height: 320px;
+    color: red;
+    border-radius: 15px;
+}
+
+.right{
+    background-color: var(--clr-very-dark-cyan);
+    width: 45%;
+    height: 320px;
+    color: red;
+    border-radius: 15px;
+}
+
+/* @media screen and (max-width: 780px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+   */
